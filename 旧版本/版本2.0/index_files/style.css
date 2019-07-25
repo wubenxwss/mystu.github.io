@@ -33,7 +33,7 @@ a#smore ,.fmbox,.arrow,.button ,#setting-box h2,#search-form .btn,#weatherBox .c
 #header { background-position:0 -45px;}
 
 
-#search-form { background:url(images/se_bg.gif) repeat-x #36A9D6; border:1px solid #3B8ED1;}
+#search-form { background:url(images/se_bg.gif) repeat-x #205B60; border:1px solid #3B8ED1;}/*serchform*/
 #search-form .search-bg { background:url(images/search_bg.gif) no-repeat 0 0; overflow:hidden;}
 #search-form .con {  border:1px solid #B2D2ED; background:none; background:url(images/search_bg_r.gif) no-repeat right 0;}
 #search-form .input { border-color:#9EC6E8;}
