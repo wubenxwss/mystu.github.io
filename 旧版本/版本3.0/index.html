@@ -39,14 +39,14 @@
         function s_1() { window.open("http://www.google.com/search?hl=zh-CN&q=" + encodeURI(f_g1.key.value)); return false; }; //谷歌
 
 
-        function s_2() { window.open("http://cn.bing.com/search?q=" + encodeURI(f_g3.key.value)); return false; };//必应
+        function s_2() { window.open("http://cn.bing.com/search?q=" + encodeURI(f_g1.key.value)); return false; };//必应
 
         function s_3() { window.open("http://www.baidu.com/baidu?tn=gg5g&word=" + encodeURI(f_g3.key.value)); return false; }; //百度
 
-        function s_4() { window.open("https://yandex.com/search/?text=" + encodeURI(f_g1.key.value)); return false; };//
+        function s_4() { window.open("https://yandex.com/search/?text=" + encodeURI(f_g4.key.value)); return false; };//谷歌镜像
 		
-		function s_5() { window.open("https://github.com/search?q=" + encodeURI(f_g1.key.value)); return false; };//csdn
-		function s_6() { window.open("https://www.zhihu.com/search?type=content&q=" + encodeURI(f_g3.key.value)); return false; };//csdn
+		function s_5() { window.open("https://github.com/search?q=" + encodeURI(f_g5.key.value)); return false; };//csdn
+		function s_6() { window.open("https://www.zhihu.com/search?type=content&q=" + encodeURI(f_g6.key.value)); return false; };//csdn
 
     </script>
 
@@ -89,25 +89,48 @@
                                   <FORM name="f_g1" onsubmit="return(s_1())" class="navbar-form navbar-left" role="search">
                                       <label for="baidu"><a href="https://www.google.com"><img src="./index_files/image/google.png" width="90" height="30"></a></label>
                                       <div class="input" align="left"><input onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="Google搜索"></div>
-                                      <button type="submit" class="btn btn-default" onclick="s_1()" style="font-size:large">谷歌</button>
-									  <button type="submit" class="btn btn-default" onclick="s_4()" style="font-size:large">Yandex</button>
-									  <button type="submit" class="btn btn-default" onclick="s_5()" style="font-size:large">Github</button>
+                                      <button type="submit" class="btn btn-default" onclick="s_1()" style="font-size:large">谷歌</button><button type="submit" class="btn btn-default" onclick="s_2()" style="font-size:large">必应</button>
                                   </FORM>
                               </div>
-                             
+                              <div id="sengine" class="clearfix">
+                                  <FORM name="f_g2" onsubmit="return(s_2())" class="navbar-form navbar-left" role="search">
+                                      <label for="baidu"><a href="https://cn.bing.com"><img src="./index_files/image/biying.png" width="90" height="30"></a></label>
+                                      <div class="input" align="left"><input onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="Bing搜索"></div>
+                                      <button type="submit" class="btn btn-default" onclick="s_2()" style="font-size:large">必应</button>
+                                  </FORM>
+                              </div>
 							  <div id="sengine" class="clearfix">
                                   <FORM name="f_g3" onsubmit="return(s_3())" class="navbar-form navbar-left" role="search">
                                       <label for="baidu"><a href="https://www.baidu.com"><img src="./index_files/image/baidu.png" width="90" height="30"></a></label>
                                       <div class="input" align="left"><input onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="百度搜索"></div>
                                       <button type="submit" class="btn btn-default" onclick="s_3()" style="font-size:large">百度</button>
-									  <button type="submit" class="btn btn-default" onclick="s_2()" style="font-size:large">必应</button>
-									  <button type="submit" class="btn btn-default" onclick="s_6()" style="font-size:large">知乎</button>
                                   </FORM>
                               </div>
 
 
-                             
+                              <div id="sengine" class="clearfix">
+                                  <FORM name="f_g4" onsubmit="return(s_4())" class="navbar-form navbar-left" role="search">
+                                      <label for="baidu"><a href="https://yandex.com/"><img src="./index_files/image/yandex.png" width="90" height="30"></a></label>
+                                      <div class="input" align="left"><input onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="Yandex搜索"></div>
+                                      <button type="submit" class="btn btn-default" onclick="s_4()" style="font-size:large">Yandex</button>
+                                  </FORM>
+                              </div>
 
+                              
+							  <div id="sengine" class="clearfix">
+                                  <FORM name="f_g5" onsubmit="return(s_5())" class="navbar-form navbar-left" role="search">
+                                      <label for="baidu"><a href="https://github.com/"><img src="./index_files/image/github.png" width="90" height="30"></a></label>
+                                      <div class="input" align="left"><input onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="Github搜索"></div>
+                                      <button type="submit" class="btn btn-default" onclick="s_5()" style="font-size:large">Github</button>
+                                  </FORM>
+                              </div>
+							  <div id="sengine" class="clearfix">
+                                  <FORM name="f_g6" onsubmit="return(s_6())" class="navbar-form navbar-left" role="search">
+                                      <label for="baidu"><a href="https://www.zhihu.com"><img src="./index_files/image/zhihu.png" width="90" height="25"></a></label>
+                                      <div class="input" align="left"><input onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="知乎搜索"></div>
+                                      <button type="submit" class="btn btn-default" onclick="s_6()" style="font-size:large">知乎</button>
+                                  </FORM>
+                              </div>
                           </div>
                       </div>
                   </div>
