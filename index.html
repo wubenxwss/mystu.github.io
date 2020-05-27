@@ -47,10 +47,13 @@
 		
 		function s_5() { window.open("https://github.com/search?q=" + encodeURI(f_g1.key.value)); return false; };//csdn
 		function s_6() { window.open("https://www.zhihu.com/search?type=content&q=" + encodeURI(f_g3.key.value)); return false; };//csdn
-
+		function s_7() { window.open("https://www.cnki.net/" ); return false; };//csdn
+		function s_8() { window.open("http://scholar.hedasudi.com/" ); return false; };//谷歌学术
     </script>
 
+	
 
+	
 </head>
 
       <body>
@@ -61,6 +64,7 @@
                   <!--顶部横条-->
                   <div id="top" class="bd">
                       <div align="right" id="toplink">
+					  <button onclick="this.innerHTML=Date()">现在的时间是?</button>
                           <a href="https://www.bilibili.com/" target="_blank" style="color:#28BCFF;"><img src="./index_files/image/bilibili.png" width="20" height="20"></a>
                           <a href="https://www.youtube.com/" target="_blank" style="color:#28BCFF;"> <img src="./index_files/image/youtube.png" width="20" height="20"></a>
                           <a href="https://github.com/" target="_blank" style="color:#28BCFF;"><img src="./index_files/image/github.jpg" width="20" height="20"></a>
@@ -90,6 +94,7 @@
                                       <label for="baidu"><a href="https://www.google.com"><img src="./index_files/image/google.png" width="90" height="30"></a></label>
                                       <div class="input" align="left"><input onblur="if (value ==''){value=''}" onfocus="this.select()" name="key" type="text" class="form-control" placeholder="Google搜索"></div>
                                       <button type="submit" class="btn btn-default" onclick="s_1()" style="font-size:large">谷歌</button>
+									  <button type="submit" class="btn btn-default" onclick="s_8()" style="font-size:large">谷歌学术</button>
 									  <button type="submit" class="btn btn-default" onclick="s_4()" style="font-size:large">Yandex</button>
 									  <button type="submit" class="btn btn-default" onclick="s_5()" style="font-size:large">Github</button>
                                   </FORM>
@@ -102,6 +107,8 @@
                                       <button type="submit" class="btn btn-default" onclick="s_3()" style="font-size:large">百度</button>
 									  <button type="submit" class="btn btn-default" onclick="s_2()" style="font-size:large">必应</button>
 									  <button type="submit" class="btn btn-default" onclick="s_6()" style="font-size:large">知乎</button>
+									  <button type="submit" class="btn btn-default" onclick="s_7()" style="font-size:large">知网</button>
+									  <button onclick="window.open('file:///C:/Windows/notepad.exe')">Launch notepad</button>
                                   </FORM>
                               </div>
 
@@ -151,11 +158,10 @@
                           <li><a href="https://bz.luosi.com/">标准查询</a></li>
                           <li><a href="http://www.cmiw.cn/">中国机械社区</a></li>
                           <li><a href="https://www.traceparts.com/zh">3D零件库</a></li>
-                          <li><a href="http://www.mapeng.net/">马棚机械</a></li>
+                          <li><a href="http://www.jishulink.com/">技术邻优化设计</a></li>
                           <li><a href="http://www.mapeng.org/hangyexifen.html#gcjx">机械网站导航</a></li>
                           <li><a href="https://www.zazhi.com.cn/">杂志之家</a></li>
-                          <li><a href="http://qikan.cqvip.com/Qikan/Journal/JournalGuid?from=Qikan_Search_Index">维普机械期刊</a></li>
-                          <li><a href="http://d.index.org/html/catalog/2346.htm">博客微博</a></li>
+                          <li><a href="http://www.simwe.com/">仿真互动</a></li>
                           <li><a href="http://d.index.org/html/catalog/2438.htm">军事大观</a></li>
                           <li><a href="http://d.index.org/html/catalog/2370.htm">游戏人生</a></li>
                           <li><a href="http://d.index.org/html/catalog/2468.htm">文学小说</a></li>
@@ -262,8 +268,46 @@
                               <h2><a id="clalign" href="javascript:void(0)" target="_self" title="左对齐/居中" class="l">左对齐/居中</a>名站导航 </h2>
                               <div id="list" class="left">
                                   <div class="dh">
+											<!--一块链接区-->
+                                      <div class="inner sites">
+                                          <h4 class="dhtitle"><a href="https://scholar.chongbuluo.com/" title="查看更多有关 科研论文网站或工具">科研</a><small><a href="https://scholar.chongbuluo.com/" title="学术虫部落">虫部落</a></small></h4>
+                                          <ul class="icon_list group">
+                                              <li><a class="icon_weixin" href="https://fsso.cnki.net/"  rel="nofollow"><b></b>知网校外</a></li>
+                                              <li><a class="icon_gmail" href="https://www.cnki.net/" rel="nofollow"><b></b>知网</a></li>
+                                              <li><a class="icon_163" href="https://www.cn-ki.net/"  rel="nofollow"><b></b>IData</a></li>
+                                              <li><a class="icon_sina" href="http://xueshu.baidu.com/"  rel="nofollow"><b></b>百度学术</a></li>
+                                              <li><a class="icon_web-qq" href="http://scholar.hedasudi.com/"  rel="nofollow"><b></b>谷歌学术</a></li>
+                                              <li><a class="icon_web-qq" href="https://sci-hub.uno/"  rel="nofollow"><b></b>SCI-HUB</a></li>
+                                              <li><a class="icon_web-qq" href="https://www.zjlib.cn/"  rel="nofollow"><b></b>浙江图书馆</a></li>
+                                              <li><a class="icon_web-qq" href="http://muchong.com/"  rel="nofollow"><b></b>小木虫论坛</a></li>
+                                              <li><a class="icon_web-qq" href="http://pss-system.cnipa.gov.cn/sipopublicsearch/portal/uiIndex.shtml"  rel="nofollow"><b></b>国家知识产权</a></li>
+                                              <li><a class="icon_web-qq" href="http://www2.soopat.com/Home/IIndex"  rel="nofollow"><b></b>SOOPAT专利</a></li>
+                                              <li><a class="icon_web-qq" href="https://china.partcommunity.com/3d-cad-models/"  rel="nofollow"><b></b>3D模型PART</a></li>
+                                              <li><a class="icon_web-qq" href="http://www.matweb.com/index.aspx"  rel="nofollow"><b></b>Matweb材料</a></li>
+                                              <li><a href="http://qikan.cqvip.com/Qikan/Journal/JournalGuid?from=Qikan_Search_Index">维普期刊</a></li>
 
+                                          </ul>
+                                      </div><!--一块链接区-->
+									<!--一块链接区-->
+                                      <div class="inner sites">
+                                          <h4 class="dhtitle"><a href="https://scholar.chongbuluo.com/" title="查看更多有关 科研论文网站或工具">电子书</a><small><a href="https://scholar.chongbuluo.com/" title="学术虫部落">虫部落</a></small></h4>
+                                          <ul class="icon_list group">
+                                              <li><a class="icon_weixin" href="http://store.tongjipress.com.cn/#/"  rel="nofollow"><b></b>同济书房</a></li>  
+                                              <li><a class="icon_gmail" href="https://ebook.chongbuluo.com/" rel="nofollow"><b></b>鸠摩搜书</a></li>
+                                              <li><a class="icon_163" href="http://www.ucdrs.superlib.net/"  rel="nofollow"><b></b>全国图书馆参考</a></li>
+                                              <li><a class="icon_sina" href="http://www.cmpedu.com/index.htm"  rel="nofollow"><b></b>机工教育</a></li>
+                                              <li><a class="icon_web-qq" href="http://gen.lib.rus.ec/"  rel="nofollow"><b></b>Libgen</a></li>
+                                              <li><a class="icon_web-qq" href="https://www.zjlib.cn/"  rel="nofollow"><b></b>浙江图书馆</a></li>
+                                              <li><a class="icon_web-qq" href="http://www.nlc.cn/"  rel="nofollow"><b></b>国家数字图书馆</a></li>
+											  <li><a class="icon_web-qq" href="http://book.sciencereading.cn/shop/main/Login/shopFrame.do"  rel="nofollow"><b></b>科学文库</a></li>
+                                              <li><a class="icon_web-qq" href="https://download.csdn.net/"  rel="nofollow"><b></b>CSDN下载</a></li>
+                                              <li><a class="icon_web-qq" href="http://www2.soopat.com/Home/IIndex"  rel="nofollow"><b></b>SOOPAT专利</a></li>
+                                              <li><a class="icon_web-qq" href="http://www.3dsource.cn/partscatalog/cataloglist.html"  rel="nofollow"><b></b>3Dsource</a></li>
+                                              <li><a class="icon_web-qq" href="http://www.matweb.com/index.aspx"  rel="nofollow"><b></b>Matweb材料</a></li>
+                                              <li><a href="http://qikan.cqvip.com/Qikan/Journal/JournalGuid?from=Qikan_Search_Index">维普期刊</a></li>
 
+                                          </ul>
+                                      </div><!--一块链接区-->
                                       <!--一块链接区-->
                                       <div class="inner sites">
                                           <h4 class="dhtitle"><a href="https://d.index.org/#" title="查看更多有关 专业学习" target="_blank">专业学习</a></h4>
